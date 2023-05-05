@@ -436,7 +436,7 @@ margin-top:45px ;
     .green__tittle{
         font-size: 26px;
         line-height: 35px;
-        padding: 93px 0px 40px 0px;
+        padding: 93px 0px 40px 10px;
     }
     .page__green-tittle{
         padding:10px 0px 25px 10px;
@@ -884,13 +884,17 @@ margin: 30px 5px 100px 0px;
         line-height: 35px;
     }
     .hand__title{
-        padding: 10px 0px 40px 0px;
+        padding: 10px 20px 40px 20px;
         font-size: 24px;
         line-height: 40px;
         letter-spacing: 1.28px;
     }
     .luma__title{
         display: none;
+    }
+
+    .main__button {
+        margin: 25px 5px 0px 20px;
     }
 }
 ._blue {
