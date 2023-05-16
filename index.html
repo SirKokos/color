@@ -3,516 +3,433 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;700&family=Roboto&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Chivo&family=Comfortaa:wght@300;400;500;700&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css\style.css"/>
+    <title>Artem</title>
 
-    <title>Tellus</title>
 </head>
-
 <body>
-
-<div class="wrapper">
-    <header class = "header">
-        <div class="header__container _container-header">
-            <div class = "header__nav">
-                <a href = "" class = "header__logo">
-                    <img src="img\logo.svg">
-                </a>
-                <a href = "" class = "header__button">
-                    <img src="img\Frame.svg">
-                </a>
-                <a href = "" class = "header__text">
-                    <img src="img\Vector1.svg">
-                </a>
+<div class="wrapper ">
+    <header class="header ">
+        <div id = "close" class = "header__container _container">
+            <div class="burger">
+                <a href="#menu" class = "burger-menu"><span></span></a>
+                <a href="#close" class = "burger-menu-close"><span></span></a>
             </div>
-            <div class = "header__title">
-                Tellus announces $26 million in financing led by a16z
+            <div id = "menu"  class = "header__nav">
+                <div class="header__text">
+                    <a href="" class="link_header">Product</a>
+                </div>
+                <div class="header__text">
+                    <a href="" class="link_header">Solutions</a>
+                </div>
+                <div class="header__text">
+                    <a href="" class="link_header">Resources</a>
+                </div>
+                <div class="header__text">
+                    <a href="" class="link_header">Pricing</a>
+                </div>
             </div>
 
-            <div class = "header__logo-green">
-                <button class="button-green">
-                    <div class = "header__logo-green_text">
-                        <img src="img\LernMore.svg">
-                    </div>
-                    <div class="img-button">
-                        <img src="img\Clip path group.svg">
-                    </div>
+            <div class = "header__sign">
+                <div class="sign__text">
+                    <a href="" class="link_sign">Sign in</a>
+                </div>
+                <div class = "button-container">
+                    <button class = "button">
+                        <div class="button__text">Sign up, free forever</div>
+                    </button>
+                </div>
 
-                </button>
             </div>
         </div>
     </header>
-    <main class = "main ">
-        <div class = "page__main-block  _container" >
-            <div class="main-block__container">
-                <h1 class="main-block__title _anim-items">Turn your savings into passive income.</h1>
-                <div class = "main-block__text _anim-items">Earn up to 22x more interest on your savings today</div>
-                <form class = "main-form">
-                    <div class = "main-form__label">
-                        <label for = "phone" class = "form-text">Enter your mobile number:</label>
-                    </div>
-                    <div class = "form-item">
-                        <div class = "form-item__input">
-                            <input type="tel" id="phone" name="phone" maxlength="11" pattern="2-[0-9]{3}-[0-9]{3}" required>
-                        </div>
-                        <div class = "main-block__button">
-                            <button type="submit" class="form__button">Отправить</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-            <div class = "main-block__img ">
-                <img src="img\IMAGE.png">
-            </div>
-        </div>
-        <div class = "bottom__brend">
-            <div class="bottom__brend-container _container">
-                <div class = "bottom__brend-item">
-                    <a href = "" class = "brend-item">
-                        <img src="img\TechCrunch.svg">
-                    </a>
+
+    <main class="main">
+        <div class = "page__main-block _container">
+            <div class = "main-block__container ">
+                <div class="main-block__title">
+<!--                    _anim-class _anim-item-->
+                    Taking the guesswork out of great work
                 </div>
-                <div class = "bottom__brend-item">
-                    <a href = "" class = "brend-item">
-                        <img src="img\Vector.svg">
-                    </a>
+                <div class="main-block__text">
+                    Level up your teamwork with an intuitive digital whiteboard built for teams to do their best work together.
                 </div>
-                <div class = "bottom__brend-item">
-                    <a href = "" class = "brend-item">
-                        <img src="img\FinanceBuzz.svg">
-                    </a>
-                </div>
-                <div class = "bottom__brend-item">
-                    <a href = "" class = "brend-item">
-                        <img src="img\PennyHoarder.svg">
-                    </a>
-                </div>
-                <div class = "bottom__brend-item">
-                    <a href = "" class = "brend-item">
-                        <img src="img\MoneyCrashers.svg">
-                    </a>
-                </div>
-                <div class = "bottom__brend-item">
-                    <a href = "" class = "brend-item">
-                        <img src="img\ProductHunt.svg">
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class = "page__main-block _container" >
-            <div class="main-block__container">
-                <div class="main-block__title-second _anim-items">Your savings,powered by real estate.</div>
-                <div class = "main-block__text--second _border _anim-items">When you deposit your money into a Tellus account,
-                    we supercharge your returns with interest income generated by residential real estate lending.
-                    <hr>
-                    Your earnings are paid out daily and your money can be pulled out at any time.</div>
-                <div class="main-block__title-second _anim-items">Earn 3.95-5.50% APY</div>
-                <div class = "main-block__text--second _border _anim-items">That's up to 22x more than the average savings account*.</div>
-                <div class="main-block__title-second _anim-items">Paid out daily</div>
-                <div class = "main-block__text--second _border _anim-items">No fees, withdraw anytime. You’re always in control.</div>
-                <div class = "main-block_button">
-                    <div class="main-block_button-container">
-                        <button class="button__work">How it works</button>
-                        <a clasa = "main-block_button-next" >
-                            <img src="img\strelka.svg">
-                        </a>
-                    </div>
+                <div class="main__button">
+                    <button class="button _red">
+                        <div class = "start"><img src="img/next.svg"></div>
+                        <div class="button__text _black">Start a whiteboard</div>
+                    </button>
                 </div>
             </div>
             <div class = "main-block__img ">
-                <img src="img\phone_people.png">
+                <img src="img\main.png">
             </div>
         </div>
-        <div class="page__main-color">
-            <div class="page__main-block _container">
+        <div class="page__main-black">
+            <div class="page__main_text-white _container ">
+                There are lots of places where people can get together and throw stickies on the wall.
+                <div class="enter"></div>
+                But if you really want to move the needle, it’s time to change more than where your team works.
+            </div>
+        </div>
+        <div class="page__main-purple">
+            <div class="purple__tittle _container">Change your how</div>
+            <div class = "main-purple__container _container">
                 <div class = "main-block__img ">
-                    <img src="img\Ariyomtov.png">
+                    <img src="img\people.png">
                 </div>
-                <div class="main-block__container">
-                    <div class = "main-block__text--second _upper _anim-items">You deserve more than your bank.</div>
-                    <div class="main-block__title-second _anim-items">Reimagine what saving can do for you.</div>
-                    <div class="main-block__text--second _anim-items">Hard to believe, we know. But it’s incredible what you can accomplish when you start seeing people as more than just a number.</div>
-                    <div class = "block-star__container">
-                        <div class="img-star">
-                            <img src="img\Star.png">
-                        </div>
-                        <div class="img-star">
-                            <img src="img\Star.png">
-                        </div>
-                        <div class="img-star">
-                            <img src="img\Star.png">
-                        </div>
-                        <div class="img-star">
-                            <img src="img\Star.png">
-                        </div>
-                        <div class="img-star">
-                            <img src="img\Star.png">
-                        </div>
-                    </div>
-                    <div class="block-score">
-                        <div class="block-score__title">TrustScore</div>
-                        <div class="block-score__excellent">Excellent</div>
+                <div class = "main-purple__text scrollItem">
+                    Give your team the chance to make exceptional work with Mural, the only complete system that offers both a place to collaborate and guidance to hone your team’s collaboration skills.
+                    <div class="enter_2"></div>
+                    With Mural, you’ll see faster progress, better ideas, happier teams, and more consistently excellent results.
+                    <div class="enter_2"></div>
+                    That’s happy work.
+                    <div class="main__button">
+                        <button class="button _red">
+                            <div class = "start"><img src="img/next.svg"></div>
+                            <div class="button__text _black">Start a whiteboard</div>
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="page__comment-block _container">
-            <div class="page__comment-container">
+        <div class="page__main-green">
+            <div class="green__tittle _container">Here’s how to</div>
 
-                <div class = main-block__comments>
-                    <div class = "comment ">
-                        <div class = "comment__text _anim-items">
-                            “Tellus has become an absolutely fantastic opportunity.
-                            I’m already getting a much better savings rate than the banks.”
-                        </div>
-                        <div class = "comment__name _anim-items">
-                            Jimmy S.
-                        </div>
-                        <div class = "name__client">
-                            Valued Customer
-                        </div>
+            <div class = "green__plus _container scrollItem ">
+                <div class="page__green-tittle ">Come up with ideas
+                    <div  class="lorem">Lorem Ipsum - это текст-"рыба", часто используемый
+                        в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой"
+                        для текстов на латинице с начала XVI века. В то время некий безымянный печатник
                     </div>
                 </div>
 
-                <div class = main-block__comments>
-                    <div class = "comment">
-                        <div class = "comment__text _anim-items">
-                            “Better than your local bank if you want to save some real money.
-                            Would recommend to anyone.”
-                        </div>
-                        <div class = "comment__name _anim-items">
-                            Steven M.
-                        </div>
-                        <div class = "name__client">
-                            Valued Customer
-                        </div>
-                    </div>
-                </div>
-
-                <div class = main-block__comments>
-                    <div class = "comment">
-                        <div class = "comment__text _anim-items">
-                            “I began using the Tellus for the incredible APY that is paid out daily.
-                            I stayed for the amazing customer service and the financial literacy.”
-                        </div>
-                        <div class = "comment__name _anim-items">
-                            Natalie
-                        </div>
-                        <div class = "name__client">
-                            Valued Customer
-                        </div>
-                    </div>
+                <div class = "button-plus_container _anim-items">
+                    <button  class = "button-plus">
+                        <a href="##" class="plus"><img src="img/plus.svg"></a>
+                    </button>
                 </div>
             </div>
-
-            <div class="bottom__comments">
-                Friendly reminder that Tellus is a financial technology company, not a bank. 🚀
-            </div>
-        </div>
-
-        <div class="page__main-img ">
-            <div class="page__img-container _container">
-                <div class="page__img-tittle _anim-items">
-                    Deposit today,get paid tomorrow.
-                </div>
-                <div class="page__img-text _anim-items">
-                    Drag the slider and see how much faster you can earn more with Tellus.
-                </div>
-                <div class = "page__img-text_2 ">
-                    Above table is for illustrative purposes only. Annual Percentage Yield ("APY") for Tellus savings products may change at any time. Tellus is not a bank.
-                </div>
-                <form class = "main__img-form">
-                    <div class = "img-form__text _anim-items">
-                        Save more, faster.
-                    </div>
-                    <div class = "img-form__label">
-                        <label for = "phone_2" class = "img-form-text">Enter your mobile number</label>
-                    </div>
-                    <div class = "img-form-item">
-                        <div class = "img-form__input">
-                            <input type="tel" class="input-img" id="phone_2" name="phone" maxlength="11" pattern="2-[0-9]{3}-[0-9]{3}" required>
-                        </div>
-                        <div class = "main-block__button">
-                            <button type="submit" class="form-img__button">Отправить
-                                <img class = "icon__button" src="img/but.svg" >
-                            </button>
-
-                        </div>
-                    </div>
-                </form>
-
-            </div>
-        </div>
-
-
-
-        <div class = "page__main-block _container" >
-            <div class="main-block__container _swap-2">
-                <div class="main-block__title-second _anim-items">Built for humans, backed by real assets.</div>
-                <div class = "main-block__text--second _border _anim-items">With Tellus, your money is within hand’s reach. Every dollar you deposit is backed by real assets - not stock or crypto. To date, Tellus has met every payment obligation and our expert
-                    customer service team is here to assist whenever you need to speak with a human.
-                    <hr></div>
-                <div class="main-block__title-second _anim-items">100% payout history</div>
-                <div class = "main-block__text--second _border _anim-items">Every member payment obligation honored.</div>
-                <div class="main-block__title-second _anim-items">Serious protection</div>
-                <div class = "main-block__text--second _border _anim-items">Every $1 of your money is backed by at least $1.30 in real assets.</div>
-                <div class = "main-block_button">
-                    <div class="main-block_button-container">
-                        <button class="button__work">How we protect you</button>
-                        <a clasa = "main-block_button-next" >
-                            <img src="img\strelka.svg">
-                        </a>
+            <div class = "green__plus _container">
+                <div class="page__green-tittle">Connect as a team
+                    <div  class="lorem">Lorem Ipsum - это текст-"рыба", часто используемый
+                        в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой"
+                        для текстов на латинице с начала XVI века. В то время некий безымянный печатник
                     </div>
                 </div>
-            </div>
-            <div class = "main-block__img _swap-1">
-                <div class = "main-block__text--second_pass _anim-items">*Real assets refers to cash and real estate collateral pledged by Tellus borrowers.
-                    Protective buffer is accurate as of November 1, 2022.</div>
-            </div>
-        </div>
-
-
-
-        <div class="page__main-color _top">
-            <div class="page__main-block _container">
-                <div class = "main-block__img _swap-2">
-                    <img src="img\status.png">
+                <div class = "button-plus_container _anim-items">
+                    <button class = "button-plus">
+                        <a href="##" class="plus"><img src="img/plus.svg"></a>
+                    </button>
                 </div>
-                <div class="main-block__container  _swap-1">
-                    <div class="main-block__title-second _anim-items">How does Tellus compare to traditional savings accounts?</div>
-                    <div class="main-block__text--second _anim-items">The numbers don't lie: a savings account at a bank is not doing much to grow your savings. Not over the next decade, anyways.</div>
+            </div>
+            <div class = "green__plus _container">
+                <div class="page__green-tittle">Make a plan
+                    <div  class="lorem">Lorem Ipsum - это текст-"рыба", часто используемый
+                        в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой"
+                        для текстов на латинице с начала XVI века. В то время некий безымянный печатник
+                    </div>
+                </div>
+                <div class = "button-plus_container _anim-items">
+                    <button class = "button-plus">
+                        <a href="##" class="plus"><img src="img/plus.svg"></a>
+                    </button>
+                </div>
+            </div>
+            <div class = "green__plus _container">
+                <div class="page__green-tittle">Coordinate and align
+                    <div  class="lorem">Lorem Ipsum - это текст-"рыба", часто используемый
+                        в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой"
+                        для текстов на латинице с начала XVI века. В то время некий безымянный печатник
+                    </div>
+                </div>
+                <div class = "button-plus_container _anim-items">
+                    <button class = "button-plus">
+                        <a href="##" class="plus"><img src="img/plus.svg"></a>
+                    </button>
+                </div>
+            </div>
+            <div class="main-green__bottom _container">
+                <div class="green-bottom__container">
+                    <div class="green-bottom__text">Hundreds of options for whatever your team needs.</div>
+                    <div class="main__button">
+                        <button class="button _org">
+                            <div class = "start"><img src="img/next.svg"></div>
+                            <div class="button__text _black">Start a whiteboard</div>
+                        </button>
+                    </div>
+
                 </div>
             </div>
         </div>
-
-        <div class = "page_plus">
-            <div class = "page_plus-container _container" >
-                <div class = "page_plus-tittle _anim-items">
-                    Frequently Asked Questions
-
+        <div class = "page__main-ibm ">
+            <div class = "main-ibm__container _container">
+                <div class="page__logoIbm-container">
+                    <div class = "page__logoIbm">
+                        <img src="img\ibm.svg">
+                    </div>
+                    <div class="ibm-lists">
+                        <div class="ibm-list">Booz</div>
+                        <div class="ibm-list">Allen</div>
+                        <div class="ibm-list">Hamilton</div>
+                    </div>
+                    <div class = "page__logoAuto">
+                        <img src="img\autodesk.svg">
+                    </div>
                 </div>
 
-                <div class = "text_plus-block">
-                    <div class = "plus-text _anim-items">What is Tellus?
-                        <div id ="lorem" class="lorem">Lorem Ipsum - это текст-"рыба", часто используемый
-                            в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой"
-                            для текстов на латинице с начала XVI века. В то время некий безымянный печатник
-                            создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки
+                <div class = "main-ibm__violet ">
+                    <div class="violet__text scrollItem">
+                        "Mural enhances our ability to create a safe space for people to collaborate and contribute,
+                        whether they’re introverted or extroverted, in person or remote.
+                        Meetings are more engaging and inclusive, and ultimately, diverse perspectives lead to more innovative, impactful solutions.”
+                    </div>
+                    <div class="violet__label">View Jacobs case study</div>
+
+                    <div class="ibm-black__container">
+                        <div class ="manage__photo">
+                            <img src="img\men.png">
                         </div>
-                    </div>
-                    <div class = "button-plus_container _anim-items ">
-                        <button id ="clik_lorem" class = "button-plus">
-                            <a href="##" id = "click-to-link" class="plus " ><img src="img/plus.svg"></a>
-                        </button>
-                    </div>
-                </div>
-
-                <div class = "text_plus-block">
-                    <div class = "plus-text _anim-items">What are the benefits of using Tellus?
-                        <div id ="lorem_1" class="lorem">Lorem Ipsum - это текст-"рыба", часто используемый
-                            в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой"
-                            для текстов на латинице с начала XVI века. В то время некий безымянный печатник
-
+                        <div class="manage__info">
+                            <div class = "manage__name">Bo Storozuk</div>
+                            <div class = "men_info">Strategic Learning & Talent Management Consultant</div>
                         </div>
-                    </div>
-                    <div class = "button-plus_container _anim-items ">
-                        <button id ="clik_lorem_1" class = "button-plus">
-                            <a href="##"  class="plus " ><img src="img/plus.svg"></a>
-                        </button>
-                    </div>
-                </div>
-
-                <div class = "text_plus-block">
-                    <div class = "plus-text _anim-items">What are the best ways to use Tellus?
-                        <div id ="lorem_2" class="lorem">Lorem Ipsum - это текст-"рыба", часто используемый
-                            в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой"
-                            для текстов на латинице с начала XVI века. В то время некий безымянный печатник
-                            создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки
-                        </div>
-                    </div>
-                    <div class = "button-plus_container _anim-items">
-                        <button id ="clik_lorem_2" class = "button-plus">
-                            <a href="###" class="plus " ><img src="img/plus.svg"></a>
-                        </button>
-                    </div>
-                </div>
-
-                <div class = "text_plus-block">
-                    <div class = "plus-text _anim-items">What are the best options for earning passive income?
-                        <div id ="lorem_3" class="lorem">Lorem Ipsum - это текст-"рыба", часто используемый
-                            в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой"
-                            для текстов на латинице с начала XVI века. В то время некий безымянный печатник
-                        </div>
-                    </div>
-                    <div class = "button-plus_container _anim-items">
-                        <button id ="clik_lorem_3" class = "button-plus">
-                            <a href="###" class="plus " ><img src="img/plus.svg"></a>
-                        </button>
-                    </div>
-                </div>
-
-                <div class = "text_plus-block">
-                    <div class = "plus-text _anim-items">How do I fund my Tellus account?
-                        <div id ="lorem_4" class="lorem">Lorem Ipsum - это текст-"рыба", часто используемый
-                            в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой"
-                            для текстов на латинице с начала XVI века. В то время некий безымянный печатник
-                            создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки
-
-                        </div>
-                    </div>
-                    <div class = "button-plus_container _anim-items">
-                        <button  id ="clik_lorem_4" class = "button-plus ">
-                            <a href="###" class="plus" ><img src="img/plus.svg"></a>
-                        </button>
-                    </div>
-                </div>
-
-                <div class = "text_plus-block">
-                    <div class = "plus-text _anim-items">How can Tellus help me save?
-                        <div id ="lorem_5" class="lorem" style="display: none">Lorem Ipsum - это текст-"рыба", часто используемый
-                            в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой"
-                            для текстов на латинице с начала XVI века. В то время некий безымянный печатник
-                            создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки
-
-                        </div>
-                    </div>
-                    <div class = "button-plus_container _anim-items">
-                        <button id ="clik_lorem_5" class = "button-plus">
-                            <a href="###" class="plus " ><img src="img/plus.svg"></a>
-                        </button>
-                    </div>
-                </div>
-
-                <div class = "text_plus-block">
-                    <div class = "plus-text _anim-items">Where can I learn more about Tellus and how it works?
-                        <div id ="lorem_6" class="lorem">Lorem Ipsum - это текст-"рыба", часто используемый
-                            в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой"
-                            для текстов на латинице с начала XVI века. В то время некий безымянный печатник
-                            создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки
-
-                        </div>
-                    </div>
-                    <div class = "button-plus_container _anim-items">
-                        <button id ="clik_lorem_6" class = "button-plus">
-                            <a href="###" class="plus " ><img src="img/plus.svg"></a>
-                        </button>
-                    </div>
-                </div>
-                <div class = "plus-block_button">
-                    <div class="plus-block_button-container">
-                        <button  class="button__load">Load more questions</button>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="page__main-blue ">
-            <div class = "page__blue-container _container">
-                <div class = "page__blue-tittle">Ready for daily payouts?
+        <div class = "page__main-beige">
+            <div class="beige__container scrollItem _container">
+                <div class = "beige__title ">For every kind of team</div>
+                <div class = "beige__text">Get specialized templates and resources to meet your team’s specific needs.</div>
+            </div>
+            <div class = "beige__img-lists _container">
+                <div class = "beige-list__container">
+                    <img src="img\1.png">
+                    <div class = "beige__img-text">Consulting</div>
+                    <div class="beige__color_1"></div>
                 </div>
-                <div class = "page__text-container">
-                    <div class = "blue__text">You don’t need to be an investor to get more from your savings. Deposit within minutes and start making passive income today.</div>
-                    <div class="blue-block_button-container">
-                        <button class="button__blue">try tellus</button>
-                    </div>
+
+                <div class = "beige-list__container">
+                    <img src="img\2.png">
+                    <div class = "beige__img-text">Executive</div>
+                    <div class="beige__color_2"></div>
+                </div>
+
+                <div class = "beige-list__container">
+                    <img src="img\3.png">
+                    <div class = "beige__img-text">Product</div>
+                    <div class="beige__color_3"></div>
+                </div>
+
+                <div class = "beige-list__container">
+                    <img src="img\4.png">
+                    <div class = "beige__img-text">Sales</div>
+                    <div class="beige__color_4"></div>
+                </div>
+
+                <div class = "beige-list__container">
+                    <img src="img\5.png">
+                    <div class = "beige__img-text">Technology</div>
+                    <div class="beige__color_5"></div>
                 </div>
             </div>
         </div>
+
+        <div class = "page__main-mural ">
+            <div class = "mural__container _container">
+                <div class = "mural__title-img"><img src="img\Mural.png"></div>
+                <div class = "mural__text-container scrollItem">
+                    <div class = "mural__text">Mural is the only system that offers both a shared workspace and training on the LUMA System™, a practical way to collaborate that anyone can learn and apply.</div>
+                    <div class = "mural__text-bottom">Read our acquisition announcement</div>
+                </div>
+            </div>
+
+            <div class = "luma__container  _container">
+                <div class = "luma__title">With Mural and the LUMA System</div>
+
+                <div class = "luma__block">
+                    <div class = "luma__text-container">
+                        <div class = "luma__text-1 scrollItem">Innovate</div>
+                        <div class = "luma__text-2 scrollItem">Help your team become confident and capable problem solvers.</div>
+                    </div>
+                    <div class = "luma__text-container">
+                        <div class = "luma__text-1">Adapt</div>
+                        <div class = "luma__text-2">Equip your team to effectively collaborate, think differently, and achieve business-driving outcomes.</div>
+                    </div>
+                    <div class = "luma__text-container">
+                        <div class = "luma__text-1">Align</div>
+                        <div class = "luma__text-2">Establish clear processes and structure for collaboration, while leaving room for creativity and innovation.</div>
+                    </div>
+
+                    <div class="main__button">
+                        <button class="button _green">
+                            <div class = "start"><img src="img/next.svg"></div>
+                            <div class="button__text _black">Learn more about LUMA System</div>
+                        </button>
+                    </div>
+
+
+                    <div class = "luma__text-bottom">This powerful combination helps teams like yours improve how they work together.</div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class = "page__main-block _brown _change">
+            <div class = "main-block__container _container ">
+                <div class="main-block__title">
+                    How did SAP
+                    achieve a 400+% ROI?
+                </div>
+                <div class="main-block__text">
+                    By changing their how. After getting started with Mural, their workers saw greater flexibility and transparency, so people worked more efficiently and fewer left the company.
+                </div>
+                <div class="main__button">
+                    <button class="button _purple">
+                        <div class = "start"><img src="img/next.svg"></div>
+                        <div class="button__text _black">Start a whiteboard</div>
+                    </button>
+                </div>
+            </div>
+            <div class = "main-block__img _container ">
+                <img src="img\trea.png">
+            </div>
+        </div>
+
+
+        <div class = "page__main-mural">
+            <div class = "hand__text _container">Enterprise on lock</div>
+            <div class="hand__title _container scrollItem">Leading enterprise collaboration for more than a decade</div>
+            <div class = "luma__container _container">
+                <div class = "luma__title"><img calss="hand-img" src="img\hand.png"></div>
+
+                <div class = "luma__block">
+                    <div class = "luma__text-container">
+                        <div class = "luma__text-1 scrollItem ">Security</div>
+                        <div class = "luma__text-2 scrollItem">Enterprise-grade visibility makes it easy to meet information governance and risk-management standards.*</div>
+                    </div>
+                    <div class = "luma__text-container">
+                        <div class = "luma__text-1">Scalability</div>
+                        <div class = "luma__text-2">Centralized control and a flexible pricing model are designed to grow with your company’s needs.</div>
+                    </div>
+                    <div class = "luma__text-container">
+                        <div class = "luma__text-1">Support</div>
+                        <div class = "luma__text-2">Get on-demand, customized guidance from our in-house customer success team.</div>
+                    </div>
+
+                    <div class="main__button">
+                        <button class="button _blue">
+                            <div class = "start"><img src="img/next.svg"></div>
+                            <div class="button__text _black">More about enterprise</div>
+                        </button>
+                    </div>
+
+
+                    <div class = "luma__text-bottom">*Mural employs rigorous measures in the areas of product security, infrastructure security, security monitoring, reliability, compliance, and privacy to keep your data safe. We maintain active SOC 2 Type 2, ISO 27001, and ISO 9001 certifications, have achieved the FedRAMP “In Process” designation, and comply with GDPR and CCPA regulations.</div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="page__main-pink">
+                <div class="page__pink-container _container">
+                    <div class = "pink__tittle">Work better for better work</div>
+                    <div class="pink__button scrollItem">
+                        <button class="button-pink _org">
+                            <div class = "_bl"></div>
+                            <div class="button__text-pink _black">Get started</div>
+                        </button>
+                    </div>
+                </div>
+        </div>
+
     </main>
+
+
     <footer class = "footer">
+        <div  class = "footer__block _container">
+            <div class = "footer__links">
 
-        <div class = "footer__container _container">
-            <div class = "footer__hide_button">
+                <div class = "hide-container">
+                    <button  class="button__footer">Product</button>
+                    <div class = "hide">
+                        <div class = "footer__link"><a href="#" class="link" >Product</a></div>
+                        <div class = "footer__link"><a href="#" class="link" >Enterprise Ready</a></div>
+                        <div class = "footer__link"><a href="#" class="link" >Security</a></div>
 
-            </div>
-            <div  class = "footer__block">
-                <div class = "footer__links">
-                    <button id ="click-to-hide" class="button__footer">ProductS</button>
-                    <div id = "hidden-element" class = "hide">
-                        <div class = "footer__link"> <a href="#" class="link" >ProductS</a></div>
-                        <div class = "footer__link"><a href="#" class="link" >Savings and income</a></div>
-                        <div class = "footer__link"><a href="#" class="link" >Property management</a></div>
+                        <div class = "footer__link"><a href="#" class="link" >Features</a></div>
+
+                        <div class = "footer__link"><a href="#" class="link" >Solutions</a></div>
+
+                        <div class = "footer__link"><a href="#" class="link" >Use Cases</a></div>
+
+                        <div class = "footer__link"><a href="#" class="link" >Industries</a></div>
+
+                        <div class = "footer__link"><a href="#" class="link" >Facilitation</a></div>
+
+                        <div class = "footer__link"><a href="#" class="link" >Templates</a></div>
                     </div>
-<!--                    <div class = "footer__link"><a href="#" class="link" >Savings and income</a></div>
-                    <div class = "footer__link"><a href="#" class="link" >Property management</a></div>-->
                 </div>
-                <div class = "footer__links">
-                    <button  id ="click-to-hide_1"  class="button__footer">SAVERS</button>
 
-                    <div id = "hidden-element_1" class = "hide">
-                        <div class = "footer__link"><a href="#" class="link" >SAVERS</a></div>
-                        <div class = "footer__link"><a href="#" class="link" >Home Buyers</a></div>
+                <div  class = "hide-container">
+                    <button  class="button__footer">Membership</button>
+                    <div class = "hide">
+                        <div class = "footer__link"><a href="#" class="link" >Membership</a></div>
+                        <div class = "footer__link"><a href="#" class="link" >Pricing </a></div>
+                        <div class = "footer__link"><a href="#" class="link" >Consultant Network</a></div>
+                        <div class = "footer__link"><a href="#" class="link" >Education</a></div>
+
+                        <div class = "footer__link"><a href="#" class="link" >Nonprofits</a></div>
+
+                        <div class = "footer__link"><a href="#" class="link" >Contact Sales</a></div>
+                    </div>
+                </div>
+
+                <div  class = "hide-container">
+                    <button  class="button__footer">Product</button>
+                    <div class = "hide">
+                        <div class = "footer__link"><a href="#" class="link" >Product</a></div>
+                        <div class = "footer__link"><a href="#" class="link" >Enterprise Ready</a></div>
+                        <div class = "footer__link"><a href="#" class="link" >Security</a></div>
+
+                        <div class = "footer__link"><a href="#" class="link" >Features</a></div>
+
+                        <div class = "footer__link"><a href="#" class="link" >Solutions</a></div>
+
+                        <div class = "footer__link"><a href="#" class="link" >Use Cases</a></div>
+
+                        <div class = "footer__link"><a href="#" class="link" >Industries</a></div>
+
+                        <div class = "footer__link"><a href="#" class="link" >Facilitation</a></div>
+
+                        <div class = "footer__link"><a href="#" class="link" >Templates</a></div>
+                    </div>
+
+
+                </div>
+
+
+                <div  class = "hide-container">
+                    <button  class="button__footer">Product</button>
+                    <div class = "hide">
+                        <div class = "footer__link"><a href="#" class="link" >Product</a></div>
+                        <div class = "footer__link"><a href="#" class="link" >Enterprise Ready</a></div>
+                        <div class = "footer__link"><a href="#" class="link" >Security</a></div>
+                        <div class = "footer__link"><a href="#" class="link" >Features</a></div>
+                        <div class = "footer__link"><a href="#" class="link" >Solutions</a></div>
                     </div>
 
                 </div>
-                <div class = "footer__links">
-                    <button  id ="click-to-hide_2"  class="button__footer">Company</button>
-                    <div id = "hidden-element_2" class = "hide">
-                        <div class = "footer__link"><a href="#" class="link" >Company</a></div>
-                        <div class = "footer__link"><a href="#" class="link" >Blog</a></div>
-                        <div class = "footer__link"><a href="#" class="link" >FAQ</a></div>
-                        <div class = "footer__link"><a href="#" class="link" >Careers</a></div>
-                        <div class = "footer__link"><a href="#" class="link" >Contact Us</a></div>
-                        <div class = "footer__link"><a href="#" class="link" >Press</a></div>
-                    </div>
-
-
-                </div>
-                <div class = "footer__links">
-                    <button  id ="click-to-hide_3"  class="button__footer">Legal</button>
-                    <div id = "hidden-element_3" class = "hide">
-                        <div class = "footer__link"><a href="#" class="link" >Legal</a></div>
-                        <div class = "footer__link"><a href="#" class="link" >Privacy Policy</a></div>
-                        <div class = "footer__link"><a href="#" class="link" >Terms of Service</a></div>
-                    </div>
-
-                </div>
-                <div class = "footer__links">
-                    <button  id ="click-to-hide_4"  class="button__footer">Get in touch</button>
-                    <div id = "hidden-element_4" class = "hide">
-                        <div class = "footer__link"><a href="#" class="link" >Get in touch</a></div>
-                        <div class = "footer__link"><a href="#" class="link" >GET TELLUS</a></div>
-                    </div>
-
-                </div>
-            </div>
-            <div class="footer__should">
-                <div class="footer__text">A few things you should know</div>
-                <div class="footer__text">The market(s) refers to the stock and crypto markets. Tellus does not invest in the stock market, crypto or any other similar security.</div>
-                <div class="footer__text">Backed by the underlying real estate, Tellus user APY daily interest payments are made independent of Tellus real estate lending returns.</div>
-                <div class="footer__text">Typical savings account refers to rates of savings accounts offered by US banks, as of 11/22/2022; Source: FDIC</div>
-                <div class="footer__text">All interest rate comparisons made based on rates of savings accounts offered by US banks, as of 11/22/2022; Source: FDIC.</div>
-            </div>
-            <div class="footer__should">
-                <div class="footer__text">Definitions</div>
-                <div class="footer__text">By using this website you agree to and accept our Terms of Service and Privacy Policy.</div>
-                <div class="footer__text">Tellus is not a bank. Tellus is not FDIC insured.</div>
-                <div class="footer__text">All user deposits held in cash are custodied by Chase Bank (aka JP Morgan Chase). There are no fees for opening or using Tellus; however your bank might charge fees based on their terms of service. Tellus reserves the right to impose a funds aging requirement on certain deposits.</div>
-                <div class="footer__text">No communication by TellusApp, Inc. or any of its affiliates (collectively, “Tellus™”), through this website or any other medium, should be construed or is intended to be a recommendation to purchase, sell or hold any security or otherwise to be investment, tax, financial, accounting, legal, regulatory or compliance advice.</div>
-                <div class="footer__text">
-                    Any financial projections or returns shown on the website are estimated predictions of performance only, are hypothetical, are not based on actual investment results and are not guarantees of future results. Estimated projections do not represent or guarantee the actual results of any transaction, and no representation is made that any transaction will, or is likely to,
-                    achieve results or profits similar to those shown. In addition, other financial metrics and calculations shown on the website (including amounts of principal and interest repaid) have not been independently verified or audited and may differ from the actual financial
-                    metrics and calculations for any investment, which are contained in the investors’ portfolios. Any investment information contained herein has been secured from sources that Tellus believes are reliable, but we make no representations or warranties as to the accuracy of such information and
-                    accept no liability therefore. Articles or information from third-party media outside of this domain may discuss Tellus or relate to information contained herein, but Tellus does not approve and is not responsible for such content.
-                    Hyperlinks to third-party sites,
-                    or reproduction of third-party articles, do not constitute an approval or endorsement by Tellus of the linked or reproduced content.</div>
-                <div class="footer__text">Banking services are provided by the Chase Bank, Member FDIC. Payment solutions are provided by Stripe and Plaid.</div>
-            </div>
-
-        </div>
-        <div class = "footer__bottom">
-            <div class = "footer__bottom-text">
-                © 2023 Tellus App, Inc. | DRE #: 02019805
             </div>
         </div>
     </footer>
 </div>
-
-
-<script src ="js/script.js" ></script>
-<script src ="js/script_hide.js" ></script>
+<script src ="js/jquery-3.7.0.min.js" ></script>
+<script src ="js/code.js" ></script>
+<script src ="js/jq.js" ></script>
 </body>
 </html>
