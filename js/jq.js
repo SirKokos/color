@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
             let scrollOffset = el.offsetTop + (el.offsetHeight / 2);
             console.log(scrollOffset)
             if (windowCenter >= scrollOffset) {
-                $("."+el.className.split(" ")[0]).slideDown(1200)
+                $("."+el.className.split(" ")[0]).slideDown(1000)
             } else {
                 $("."+el.className.split(" ")[0]).hide()
 
