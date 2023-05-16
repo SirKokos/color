@@ -1,105 +1,76 @@
-
-// var intervalId = setInterval(function() {
-//       $(function (){
-//          $(".main-block__title").slideUp(800).slideDown(1500)
-//       })
-//    }, 4000);
-
-
-// var intervalId = setInterval(function() {
-//   $(function (){
-//       $(".main-block__img").slideDown(3000).slideUp(2000)//.fadeTo(1000,0.2).fadeTo(2200,1);
-//    })
-//    }, 4000);
 //
-
-
-
-// $(window).scroll(function() {
+// document.addEventListener("DOMContentLoaded",()=>{
+//     const scrollItem = document.querySelectorAll(".scrollItem")
 //
-//    var target = $(this).scrollTop();
+//     const scrollAnimation = () => {
+//         let windowCentre = (window.innerHeight/2) + window.scrollY;
+//         scrollItem.forEach(el1 =>{
 //
-//    if(target == 0) {
+//            let scrollOffset = el1.offsetTop + el1.offsetHeight/2;
 //
-//       $(function (){
-//          $(".main-block__title").slideDown(1000)
-//       });
-//       $(function (){
-//          $(".page__main_text-white").slideDown(1000)
-//       });
+//            if(windowCentre > scrollOffset){
+//                // $("."+el1.className.split(" ")[0]).slideDown(3000)
+//                el1.classList.add("a")
 //
+//            }else {
+//                el1.classList.remove("a")
+//                // $("."+el1.className.split(" ")[0]).slideUp()
+//                // $("."+el1.className.split(" ")[0]).slideUp(2000)
 //
+//            }
 //
-//    } else {
-//
-//       $(function (){
-//          $(".main-block__title").slideUp(3000)
-//       });
-//       $(function (){
-//          $(".page__main_text-white").slideUp(4000)
-//       });
-//
-//    }
-//
+//         });
+//     };
+//     scrollAnimation();
+//     window.addEventListener("scroll",()=>{
+//         scrollAnimation();
+//     });
 // });
-
-let isScroll = 0 // доп. проверка
-    targetScroll =  (window.screen.width)// расстояние до действия / в px
-
-$(window).on('scroll', function(){
-   if($(this).scrollTop() >= targetScroll/2) {
-      isScroll = 1;
-
-      $(function (){
-         $(".main-block__title").fadeOut(1000).fadeIn(2000);
-      });
+//
 
 
-      $(function (){
-         $(".main-purple__text").slideDown(1000)
-      });
+document.addEventListener('DOMContentLoaded', () => {
 
-      $(function (){
-         $(".page__green-tittle").slideDown(2000)
-      });
+    const scrollItems = document.querySelectorAll('.scrollItem');
 
-      $(function (){
-         $(".violet__text").slideDown(2000)
-      });
+    const scrollAnimation = () => {
+        let windowCenter = (window.innerHeight / 2) + window.scrollY+600;
+        // console.log(windowCenter)
+        scrollItems.forEach(el => {
+            let scrollOffset = el.offsetTop + (el.offsetHeight / 2);
+            console.log(scrollOffset)
+            if (windowCenter >= scrollOffset) {
+                $("."+el.className.split(" ")[0]).slideDown(1200)
+            } else {
+                $("."+el.className.split(" ")[0]).hide()
 
-      $(function (){
-         $(".beige__container ").slideDown(2000)
-      });
+            }
+        });
+    };
 
-
-      $(function (){
-         $(".beige__img-lists").slideDown(2000)
-      });
-
-
-   } else if(isScroll === 0 || $(this).scrollTop() < targetScroll/2) {
-      isScroll = 0;
-
-      $(function (){
-         $(".main-purple__text").slideUp(3000)
-      });
-
-      $(function (){
-         $(".page__green-tittle").slideUp(1000)
-      });
-
-
-      $(function (){
-         $(".violet__text").slideUp(2000)
-      });
-
-      $(function (){
-         $(".beige__container").slideUp(3000)
-      });
-
-      $(function (){
-         $(".beige__img-lists").slideUp(3000)
-      });
-
-   }
+    scrollAnimation();
+    window.addEventListener('scroll', () => {
+        scrollAnimation();
+    });
 });
+
+      $(function (){
+         $(".main-block__title").fadeOut(2000).fadeIn(5000);
+      })
+
+
+document.addEventListener("DOMContentLoaded", hiddenCloseclick_lorem);
+for (let i = 0; i<8;i++){
+
+    document.getElementsByClassName('plus')[i].addEventListener("click", hiddenCloseclick_lorem);
+
+    function hiddenCloseclick_lorem(){
+        let x = document.getElementsByClassName('lorem')[i];
+        if (x.style.display == "block"){
+            x.style.display = "none";
+        } else {
+            x.style.display = "block"}
+
+    };
+};
+
