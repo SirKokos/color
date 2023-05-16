@@ -558,6 +558,7 @@ margin-top:45px ;
     line-height: 42px;
     letter-spacing: 0.96px;
 
+
 }
 
 
@@ -1254,4 +1255,39 @@ margin: 30px 5px 100px 0px;
     .hide-container{
         text-align: center;
     }
+}
+.lorem{
+    color: #0E0F0F;
+    font-size: 18px;
+    display: none;
+    line-height: 15px;
+
+}
+.button-plus_container> button {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+}
+
+@keyframes bounce {
+    0%, 20%, 60%, 100% {
+        transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+
+    80% {
+        transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+}
+.button-plus_container:hover {
+    animation: bounce 1s;
 }
