@@ -16,3 +16,4 @@ for (let i = 0; i<5;i++){
             x.style.display = "block"}
     };
 };
+
