@@ -414,7 +414,7 @@ margin-top:45px ;
 @media (max-width: 440px) {
     .main-purple__container{
         gap: 0px;
-        padding: 0px 0px 0px 10px;
+
     }
     .purple__tittle{
         max-width: 325px;
@@ -424,6 +424,7 @@ margin-top:45px ;
         padding: 92px 0px 0px 10px;
     }
     .main-purple__text{
+        padding: 0px 0px 0px 10px;
         max-width: 400px;
         font-size: 18px;
         line-height: 36px;
@@ -1051,7 +1052,10 @@ margin: 30px 5px 100px 0px;
     }
 
     .main__button {
-        margin: 25px 5px 0px 20px;
+        margin: 25px 5px 0px 10px;
+    }
+    .main-purple__text>.main__button {
+        margin: 25px 5px 0px 0px;
     }
 }
 ._blue {
