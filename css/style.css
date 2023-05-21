@@ -1283,24 +1283,45 @@ margin: 30px 5px 100px 0px;
     outline: none;
 }
 
-@keyframes bounce {
-    0%, 20%, 60%, 100% {
-        transform: translateY(0);
-        transform: translateY(0);
-    }
+@media (max-width: 2000px) {
+    @keyframes bounce {
+        0%, 20%, 60%, 100% {
+            transform: translateY(0);
+            transform: translateY(0);
+        }
 
-    40% {
-        transform: translateY(-20px);
-        transform: translateY(-20px);
-    }
+        40% {
+            transform: translateY(-20px);
+            transform: translateY(-20px);
+        }
 
-    80% {
-        transform: translateY(-10px);
-        transform: translateY(-10px);
+        80% {
+            transform: translateY(-10px);
+            transform: translateY(-10px);
+        }
+    }
+    .button-plus_container:hover {
+        animation: bounce 1s;
     }
 }
-.button-plus_container:hover {
-    animation: bounce 1s;
+
+@media (max-width: 445px) {
+    @keyframes bounce {
+        0%, 20%, 60%, 100% {
+
+        }
+
+        40% {
+
+        }
+
+        80% {
+
+        }
+    }
+    .button-plus_container:hover {
+
+    }
 }
 .body_hidden{
     overflow: hidden;
