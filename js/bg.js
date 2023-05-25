@@ -1,5 +1,4 @@
 //дожидаемся полной загрузки страницы
-window.onload = function () {
 
     //получаем идентификатор элемента
     let open = document.getElementsByClassName('burger-menu')[0];
@@ -19,4 +18,3 @@ window.onload = function () {
 
 
     }
-}
