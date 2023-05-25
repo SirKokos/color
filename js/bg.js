@@ -5,7 +5,7 @@ window.onload = function () {
     let open = document.getElementsByClassName('burger-menu')[0];
     let close = document.getElementsByClassName('burger-menu-close')[0];
     //вешаем на него событие
-    close.style.display = "none"
+    // close.style.display = "none"
     open.onclick = function() {
         //производим какие-то действия
         open.style.display = "none"
@@ -16,7 +16,7 @@ window.onload = function () {
         //производим какие-то действия
         open.style.display = "flex"
         close.style.display = "none"
-       
+
 
     }
 }
